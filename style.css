@@ -1,0 +1,214 @@
+* {
+   background-color: white;
+}
+body {
+   font-family: 'Roboto', sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   height: 100vh;
+   width: 100%; 
+   display:flex;
+   flex-direction: column;
+}
+
+a {
+   text-decoration: none;
+}
+
+header {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   height: 60px;
+   font-size: 13px;
+   padding-top: 4px;
+   padding-right: 20px;
+}
+
+header .menu {
+   width: 15px;
+   height: 15px;
+   margin-bottom: 5px;
+}
+
+.header-content {
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+header .logo {
+   width: 50px;
+   margin-top: 10px;
+}
+
+header a {
+   font-weight: 100;
+   font-size: 12px;
+   font-family: Arial, Helvetica, sans-serif;
+   color: black;
+}
+
+main {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   align-content: center;
+   flex: 1;
+   flex-direction: column;
+   margin-bottom: 100px;
+}
+
+.search .google {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 20px;
+}
+
+.search_border {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   width: 580px;
+   height: 44px;
+   border: 1px solid #d1d3d4;
+   border-radius: 24px;
+}
+
+.input_search {
+   flex: 1;
+}
+
+.input_search input{
+   width: 100%;
+   background-color: transparent;
+   border: none;
+   outline: none;
+   color: white;
+   font-size: 16px;
+}
+
+.search {
+   padding: 18px;
+   margin-top: 10px;
+}
+
+.input_search{
+   margin-left: 18px;
+   margin-right: 10px;
+}
+.icon_voz{
+   margin: 10px 15px 10px 15px;
+}
+
+#keyboard {
+   height: 20px;
+   width: 30px;
+}
+
+#mic {
+   height: 20px;
+   width: 30px;
+}
+
+.search_border:hover {
+   box-shadow: 0 0 20px rgba(0,0,0,0.3);
+   transition:all 0.4s ease;
+}
+
+.buttons {
+   display: flex;
+   flex-direction: row;
+   gap: 10px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 100;
+   align-items: center;
+   margin: 11px 4px;
+}
+
+.buttons button {
+   font-size: 14px;
+   border: 1px solid #f8f9fa;
+   min-width: 54px;
+   background-color: #f8f9fa;
+   padding: 0 16px;
+   height: 36px;
+   display: flex;
+   align-items: center;
+   border-radius: 4px;
+}
+
+.buttons button:hover {
+   border:1px solid #dadada;
+   box-shadow: 0 1px 0 lightgray;
+}
+
+.footerTop {
+   background-color: #f2f2f2;
+   border-top: 1px solid rgb(230, 230, 230);
+   line-height: 40px;
+}
+
+footer {
+   display: flex;
+   flex-direction: column;
+   background: #f2f2f2;
+}
+
+.footerTop span {
+   background-color: #f2f2f2;
+   text-decoration: none;
+   color: rgb(80, 79, 79);
+   margin-left: 30px;
+}
+
+.footerSub {
+   display: flex;
+   flex-direction: row;
+   background-color: #f2f2f2;
+   border-top: 1px solid rgb(230, 230, 230);
+   line-height: 40px;
+   justify-content: space-between;
+   font-size: 13px;
+}
+
+.footerSub a {
+   background-color: #f2f2f2;
+   text-decoration: none;
+}
+
+.footerSub1 {
+   float: left;
+   border: 1px solid #f2f2f2;
+   background-color: #f2f2f2;
+   margin-left: 30px;
+}
+
+.footerSub1 a {
+   margin-right: 20px;
+   color: rgb(80, 79, 79);
+}
+
+.footerSub2 {
+   float: right;
+   margin-right: 30px;
+   border: 1px solid #f2f2f2;
+   background-color: #f2f2f2;
+}
+
+.footerSub2 a {
+   margin-right: 20px;
+   color: rgb(80, 79, 79);
+}
+
+@media only screen and (max-width:1200px) {
+   footer .footerSub{
+       justify-content: space-evenly;
+   }
+
+   footer .footerSub1,
+   footer .footerSub2{
+   justify-content: space-evenly;
+   }
+}
